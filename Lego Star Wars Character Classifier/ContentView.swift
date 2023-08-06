@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showImagePicker = false
+    @State private var showPhotoPicker = false
     @State private var image: UIImage?
     @State private var isPredicting = false
     @State private var predictionString = ""
@@ -31,7 +32,7 @@ struct ContentView: View {
                 }
                 .frame(maxHeight: .infinity)
             } else {
-                Image(systemName: "photo")
+                Image(systemName: "photo.circle")
                     .font(.system(size: 40))
                     .frame(maxHeight: .infinity)
             }
@@ -40,19 +41,49 @@ struct ContentView: View {
                 Text(isPredicting ? "Predicting..." : "Capture image to predict character")
                     .padding()
 
-                Button("Capture image") {
-                    showImagePicker.toggle()
+                HStack {
+                    if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                        Button {
+                            captureImageFromCamera()
+                        } label: {
+                            Image(systemName: "camera")
+                        }
+                        .padding()
+                    }
+
+                    Button {
+                        selectPhoto()
+                    } label: {
+                        Image(systemName: "photo")
+                    }
                 }
             }
         }
         .padding()
         .sheet(isPresented: $showImagePicker) {
             ImagePickerView(sourceType: .camera) { image in
-                self.image = image
-                DispatchQueue.global(qos: .userInitiated).async {
-                    self.predictImage(image)
-                }
+                handleImage(image)
             }
+        }
+        .sheet(isPresented: $showPhotoPicker) {
+            PhotoPickerView { image in
+                handleImage(image)
+            }
+        }
+    }
+
+    private func captureImageFromCamera() {
+        showImagePicker.toggle()
+    }
+
+    private func selectPhoto() {
+        showPhotoPicker.toggle()
+    }
+
+    private func handleImage(_ image: UIImage) {
+        self.image = image
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.predictImage(image)
         }
     }
 

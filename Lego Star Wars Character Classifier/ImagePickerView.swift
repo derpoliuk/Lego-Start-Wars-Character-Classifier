@@ -8,7 +8,6 @@
 import SwiftUI
 
 // Inspired by https://github.com/ralfebert/ImagePickerView
-
 struct ImagePickerView: UIViewControllerRepresentable {
     private let sourceType: UIImagePickerController.SourceType
     private let onImagePicked: (UIImage) -> Void

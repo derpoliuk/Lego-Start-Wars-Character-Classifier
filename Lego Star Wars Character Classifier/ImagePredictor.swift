@@ -65,6 +65,10 @@ final class ImagePredictor {
             completionHandler: visionRequestHandler
         )
         imageClassificationRequest.imageCropAndScaleOption = .centerCrop
+        #if targetEnvironment(simulator)
+        // Workaround to fix the the issue on the Simulator: https://developer.apple.com/forums/thread/696714
+        imageClassificationRequest.usesCPUOnly = true
+        #endif
         return imageClassificationRequest
     }
 

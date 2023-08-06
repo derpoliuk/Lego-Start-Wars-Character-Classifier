@@ -14,6 +14,7 @@
 		D196FD532A7F19A80029A99F /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196FD522A7F19A80029A99F /* ImagePickerView.swift */; };
 		D196FD592A7F20370029A99F /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196FD582A7F20370029A99F /* ImagePredictor.swift */; };
 		D196FD5B2A7F2C980029A99F /* Lego Star Wars Character Classifier v2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D196FD5A2A7F2C980029A99F /* Lego Star Wars Character Classifier v2.mlmodel */; };
+		D196FD5D2A7F30D50029A99F /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196FD5C2A7F30D50029A99F /* PhotoPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D196FD522A7F19A80029A99F /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		D196FD582A7F20370029A99F /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
 		D196FD5A2A7F2C980029A99F /* Lego Star Wars Character Classifier v2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Lego Star Wars Character Classifier v2.mlmodel"; sourceTree = "<group>"; };
+		D196FD5C2A7F30D50029A99F /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				D196FD442A7F05600029A99F /* ContentView.swift */,
 				D196FD582A7F20370029A99F /* ImagePredictor.swift */,
 				D196FD522A7F19A80029A99F /* ImagePickerView.swift */,
+				D196FD5C2A7F30D50029A99F /* PhotoPicker.swift */,
 				D196FD462A7F05610029A99F /* Assets.xcassets */,
 				D196FD5A2A7F2C980029A99F /* Lego Star Wars Character Classifier v2.mlmodel */,
 				D196FD482A7F05610029A99F /* Preview Content */,
@@ -148,6 +151,7 @@
 			files = (
 				D196FD452A7F05600029A99F /* ContentView.swift in Sources */,
 				D196FD532A7F19A80029A99F /* ImagePickerView.swift in Sources */,
+				D196FD5D2A7F30D50029A99F /* PhotoPicker.swift in Sources */,
 				D196FD5B2A7F2C980029A99F /* Lego Star Wars Character Classifier v2.mlmodel in Sources */,
 				D196FD592A7F20370029A99F /* ImagePredictor.swift in Sources */,
 				D196FD432A7F05600029A99F /* Lego_Star_Wars_Character_ClassifierApp.swift in Sources */,
