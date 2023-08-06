@@ -11,6 +11,9 @@
 		D196FD452A7F05600029A99F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196FD442A7F05600029A99F /* ContentView.swift */; };
 		D196FD472A7F05610029A99F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D196FD462A7F05610029A99F /* Assets.xcassets */; };
 		D196FD4A2A7F05610029A99F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D196FD492A7F05610029A99F /* Preview Assets.xcassets */; };
+		D196FD532A7F19A80029A99F /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196FD522A7F19A80029A99F /* ImagePickerView.swift */; };
+		D196FD592A7F20370029A99F /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196FD582A7F20370029A99F /* ImagePredictor.swift */; };
+		D196FD5B2A7F2C980029A99F /* Lego Star Wars Character Classifier v2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D196FD5A2A7F2C980029A99F /* Lego Star Wars Character Classifier v2.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		D196FD442A7F05600029A99F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D196FD462A7F05610029A99F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D196FD492A7F05610029A99F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D196FD522A7F19A80029A99F /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		D196FD582A7F20370029A99F /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
+		D196FD5A2A7F2C980029A99F /* Lego Star Wars Character Classifier v2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Lego Star Wars Character Classifier v2.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,10 @@
 			children = (
 				D196FD422A7F05600029A99F /* Lego_Star_Wars_Character_ClassifierApp.swift */,
 				D196FD442A7F05600029A99F /* ContentView.swift */,
+				D196FD582A7F20370029A99F /* ImagePredictor.swift */,
+				D196FD522A7F19A80029A99F /* ImagePickerView.swift */,
 				D196FD462A7F05610029A99F /* Assets.xcassets */,
+				D196FD5A2A7F2C980029A99F /* Lego Star Wars Character Classifier v2.mlmodel */,
 				D196FD482A7F05610029A99F /* Preview Content */,
 			);
 			path = "Lego Star Wars Character Classifier";
@@ -138,6 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D196FD452A7F05600029A99F /* ContentView.swift in Sources */,
+				D196FD532A7F19A80029A99F /* ImagePickerView.swift in Sources */,
+				D196FD5B2A7F2C980029A99F /* Lego Star Wars Character Classifier v2.mlmodel in Sources */,
+				D196FD592A7F20370029A99F /* ImagePredictor.swift in Sources */,
 				D196FD432A7F05600029A99F /* Lego_Star_Wars_Character_ClassifierApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -272,8 +284,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lego Star Wars Character Classifier/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To detect your favorite Yoda Chronicles characters";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +314,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lego Star Wars Character Classifier/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To detect your favorite Yoda Chronicles characters";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
